@@ -1,0 +1,62 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<link rel="stylesheet" type="text/css" href="main.css">
+<title>Mediation & Coaching Maren Petersen</title>
+<script>
+	function myFunction() {
+
+		var spruchArray = [
+				"Solange Du dem Anderen sein Anderssein nicht verzeihen kannst, bist Du weitab vom Wege zur Weisheit. -Chinesisches Sprichwort",
+				"Jedes Ding hat drei Seiten: Eine, die Du siehst, eine, die ich sehe, und eine, die wir beide nicht sehen. -Chinesische Weisheit",
+				"Bevor man eine Auseinandersetzung beginnt, sollte man durch drei Tore gehen: Das erste Tor fragt: Ist es wahr, was Du sagst? Das zweite Tor: Ist es notwendig? Das dritte Tor: Ist es auch freundlich? -Arabisches Sprichwort",
+				"Ziel eines Konfliktes oder Auseinandersetzung soll nicht der Sieg, sondern der Fortschritt sein. -Joseph Joubert" ];
+		var span = document.getElementById('spruchSpan');
+
+		while (span.firstChild) {
+			span.removeChild(span.firstChild);
+		}
+		var num = Math.floor(Math.random() * (4 - 0 + 1)) + 0;
+		span.appendChild(document.createTextNode(spruchArray[num]));
+	}
+</script>
+</head>
+<body id="body">
+
+	<div id="leftBar">
+		<span id="navi-left" class="left-bar navi"> <a
+			href="start.html" target="contentFrame"><img
+				src="pics/prio1small.jpg" alt="Maren Petersen Bild" /></a> <span
+			id="spruchSpan">Ziel eines Konfliktes oder Auseinandersetzung
+				soll nicht der Sieg, sondern der Fortschritt sein. <br></span><br><img alt="Pfeil" src="pics/pfeil_edit.png" id="arrow"/></span>
+	</div>
+	<div id="div-top" class="navi">
+		<span id="navi-span-top" class="navBar">
+			<ul>
+				<li><a href="Konflikte.html" target="contentFrame"
+					onclick="myFunction()">Was sind Konflikte?</a></li>
+				<li><a href="Ueber_Mich.html" target="contentFrame"
+					onclick="myFunction()">Über mich</a></li>
+				<li><a href="Mein_Angebot.html" target="contentFrame"
+					onclick="myFunction()">Mein Angebot</a></li>
+				<li><a href="Preise.html" target="contentFrame"
+					onclick="myFunction()">Preise</a></li>
+
+				<li><a href="flyer.pdf" target="new" onclick="myFunction()">Flyer</a></li>
+				<li><a href="Links.html" target="contentFrame" onclick="myFunction()">Links</a></li>
+				<li><a href="impressum.html" target="contentFrame"
+					onclick="myFunction()">Impressum</a></li>
+			</ul>
+		</span>
+	</div>
+	<div id="div-down">
+
+		<iframe name="contentFrame" id="contentFrame" src="start.html"
+			width="100%" height="100%"></iframe>
+
+
+
+	</div>
+</body>
+</html>
